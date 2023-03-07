@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<connectedSystemHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e94d-eca5-8000-9ba7-011c48011c48_16121</versionUuid>
+    <connectedSystem>
+        <name>Beazley-SPO-DEV</name>
+        <uuid>_a-0000e94d-eca5-8000-9ba7-011c48011c48_16090</uuid>
+        <description></description>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <sharedConfigParameters>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <configurationDescriptor xsi:type="a:Dictionary">
+                    <types xsi:type="a:Dictionary">
+                        <RootType xsi:type="a:Dictionary">
+                            <properties xsi:type="a:Dictionary?list">
+<item>
+    <description xsi:nil="true" xsi:type="a:Null"/>
+    <refresh xsi:type="xsd:string">NEVER</refresh>
+    <placeholder xsi:type="xsd:string">https://yourInstance.sharepoint.com</placeholder>
+    <isImportCustomizable xsi:type="xsd:boolean">true</isImportCustomizable>
+    <instructionText xsi:nil="true" xsi:type="a:Null"/>
+    <isExpressionable xsi:type="xsd:boolean">false</isExpressionable>
+    <label xsi:type="xsd:string">Instance URL</label>
+    <isRequired xsi:type="xsd:boolean">true</isRequired>
+    <displayHint xsi:type="xsd:string">NORMAL</displayHint>
+    <hasTransientChoices xsi:type="xsd:boolean">false</hasTransientChoices>
+    <key xsi:type="xsd:string">instanceUrl</key>
+    <isHidden xsi:type="xsd:boolean">false</isHidden>
+    <isMasked xsi:type="xsd:boolean">false</isMasked>
+    <isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+    <type xsi:type="xsd:string">STRING</type>
+</item>
+<item>
+    <description xsi:nil="true" xsi:type="a:Null"/>
+    <refresh xsi:type="xsd:string">NEVER</refresh>
+    <placeholder xsi:nil="true" xsi:type="a:Null"/>
+    <isImportCustomizable xsi:type="xsd:boolean">true</isImportCustomizable>
+    <instructionText xsi:type="xsd:string">In the Azure portal, navigate to "Azure Active Directory", select "App Registrations",  and then select your application. The Application (client) ID will be listed on this page.</instructionText>
+    <isExpressionable xsi:type="xsd:boolean">false</isExpressionable>
+    <label xsi:type="xsd:string">Application (Client) ID</label>
+    <isRequired xsi:type="xsd:boolean">true</isRequired>
+    <displayHint xsi:type="xsd:string">NORMAL</displayHint>
+    <hasTransientChoices xsi:type="xsd:boolean">false</hasTransientChoices>
+    <key xsi:type="xsd:string">applicationId</key>
+    <isHidden xsi:type="xsd:boolean">false</isHidden>
+    <isMasked xsi:type="xsd:boolean">false</isMasked>
+    <isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+    <type xsi:type="xsd:string">STRING</type>
+</item>
+<item>
+    <description xsi:nil="true" xsi:type="a:Null"/>
+    <refresh xsi:type="xsd:string">NEVER</refresh>
+    <placeholder xsi:nil="true" xsi:type="a:Null"/>
+    <isImportCustomizable xsi:type="xsd:boolean">true</isImportCustomizable>
+    <instructionText xsi:type="xsd:string">In the Azure portal, navigate to "Azure Active Directory", select "App Registrations",  and then select your application. The Directory (tenant) ID will be listed on this page.</instructionText>
+    <isExpressionable xsi:type="xsd:boolean">false</isExpressionable>
+    <label xsi:type="xsd:string">Directory (Tenant) ID</label>
+    <isRequired xsi:type="xsd:boolean">true</isRequired>
+    <displayHint xsi:type="xsd:string">NORMAL</displayHint>
+    <hasTransientChoices xsi:type="xsd:boolean">false</hasTransientChoices>
+    <key xsi:type="xsd:string">directoryId</key>
+    <isHidden xsi:type="xsd:boolean">false</isHidden>
+    <isMasked xsi:type="xsd:boolean">false</isMasked>
+    <isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+    <type xsi:type="xsd:string">STRING</type>
+</item>
+<item>
+    <description xsi:nil="true" xsi:type="a:Null"/>
+    <refresh xsi:type="xsd:string">NEVER</refresh>
+    <placeholder xsi:nil="true" xsi:type="a:Null"/>
+    <isImportCustomizable xsi:type="xsd:boolean">true</isImportCustomizable>
+    <instructionText xsi:type="xsd:string">From your application page in Azure AD portal, select "Certificates &amp; secrets", and then navigate to "Client secrets".  Add a new client secret and click "Add".  The generated key value is the Client Secret and must be copied before leaving this page.</instructionText>
+    <isExpressionable xsi:type="xsd:boolean">false</isExpressionable>
+    <label xsi:type="xsd:string">Client Secret</label>
+    <isRequired xsi:type="xsd:boolean">true</isRequired>
+    <displayHint xsi:type="xsd:string">NORMAL</displayHint>
+    <key xsi:type="xsd:string">clientSecret</key>
+    <isHidden xsi:type="xsd:boolean">false</isHidden>
+    <isMasked xsi:type="xsd:boolean">true</isMasked>
+    <isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+    <type xsi:type="xsd:string">ENCRYPTED</type>
+</item>
+                            </properties>
+                            <name xsi:type="xsd:string">RootType</name>
+                        </RootType>
+                    </types>
+                    <state xsi:type="a:Dictionary">
+                        <a:entry key="#t" xsi:type="xsd:string">#/types/RootType</a:entry>
+                        <applicationId xsi:type="xsd:string">33395b42-7ffa-4020-8f73-451f7a96e22a</applicationId>
+                        <clientSecret xsi:type="a:EncryptedText"/>
+                        <directoryId xsi:type="xsd:string">9a50eba8-7568-447a-bcb9-27a0d464aa80</directoryId>
+                        <instanceUrl xsi:type="xsd:string">https://beazley.sharepoint.com</instanceUrl>
+                    </state>
+                    <connectedSystemTemplateKey xsi:type="xsd:string">SharePointConnectedSystem</connectedSystemTemplateKey>
+                </configurationDescriptor>
+                <url xsi:type="xsd:string"/>
+                <isInheritedUrlOptionSelected xsi:type="xsd:boolean">false</isInheritedUrlOptionSelected>
+                <isCstOAuth xsi:type="xsd:boolean">true</isCstOAuth>
+                <authType xsi:type="xsd:string">CSTF Auth</authType>
+                <authDetails xsi:type="a:Dictionary">
+                    <clientSecret xsi:type="a:EncryptedText">jA0ECQMCOHpBcH_1BlQB0lEBjvC8AebvgRwIKg4Rm-EjGofGkz5-CIl7NDHCG0BDjMSgL2SOYixWrI40zqk1kugc6YH-c1Z8vAY0b_FV7JRazjKNcB4K0OA-_kvUjdDbj2Q</clientSecret>
+                    <clientId xsi:type="xsd:string">33395b42-7ffa-4020-8f73-451f7a96e22a</clientId>
+                    <tokenUrl xsi:type="xsd:string">https://login.microsoftonline.com/9a50eba8-7568-447a-bcb9-27a0d464aa80/oauth2/token</tokenUrl>
+                    <authUrl xsi:type="xsd:string">https://login.microsoftonline.com/9a50eba8-7568-447a-bcb9-27a0d464aa80/oauth2/authorize?resource=https%3A%2F%2Fbeazley.sharepoint.com</authUrl>
+                    <scope xsi:type="xsd:string"/>
+                </authDetails>
+            </a:Dictionary>
+        </sharedConfigParameters>
+        <logoChoice></logoChoice>
+        <integrationType>plugin.[SharePoint].[SharePoint]</integrationType>
+    </connectedSystem>
+    <roleMap public="true">
+        <role inherit="false" allowForAll="false" name="readers">
+            <users/>
+            <groups>
+                <groupUuid>237cd6a2-ed34-4e42-b79a-8670415d361b</groupUuid>
+            </groups>
+        </role>
+        <role inherit="false" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="administrators">
+            <users/>
+            <groups>
+                <groupUuid>50375096-5891-42ff-aba8-ed268eec660b</groupUuid>
+            </groups>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e94d-eca5-8000-9ba7-011c48011c48_16121"/>
+    </history>
+</connectedSystemHaul>
