@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e94d-eca5-8000-9ba7-011c48011c48_16127</versionUuid>
+    <outboundIntegration>
+        <name>Test_To_Be_Deleted</name>
+        <uuid>cff38d83-9e4e-4285-bd56-44ce6370f118</uuid>
+        <description></description>
+        <parentUuid>1ffc6810-6713-45b0-9228-6059926a618d</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition></definition>
+        <namedTypedValue>
+            <name>onSuccess</name>
+            <description>A list of saves or an HTTP response to execute after the smart service executes successfully. Created with a!save() or a!httpResponse(). The result of the request is available in the function variable fv!result.</description>
+            <type>
+                <name>Variant</name>
+                <namespace>http://www.appian.com/ae/types/2009</namespace>
+            </type>
+        </namedTypedValue>
+        <namedTypedValue>
+            <name>onError</name>
+            <description>A list of saves or an HTTP response to execute after the smart service does not execute successfully. Created with a!save() or a!httpResponse(). The result of the request is available in the function variable fv!result. Information about the error is available in the function variable fv!error. If using a Connected System that uses OAuth, whenever there is an error due to missing user authorization, the Connected System will be available in the function variable fv!connectedSystem. The Connected System can be used with the a!authorizationLink function to generate a link end users can click to perform the authorization.</description>
+            <type>
+                <name>Variant</name>
+                <namespace>http://www.appian.com/ae/types/2009</namespace>
+            </type>
+        </namedTypedValue>
+        <metadataExpr>{
+deferredRuleInputs: {
+    onSuccess: {
+      "fv!result": 'type!{http://www.appian.com/ae/types/2009}Dictionary'
+    },
+    onError: {
+      "fv!result": 'type!{http://www.appian.com/ae/types/2009}Dictionary',
+      "fv!error": 'type!{http://www.appian.com/ae/types/2009}Dictionary',
+      "fv!connectedSystem": 'type!{http://www.appian.com/ae/types/2009}ConnectedSystem'
+    }
+  }
+}</metadataExpr>
+        <preferredEditor>legacy</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+        <sharedConfigParameters>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </sharedConfigParameters>
+        <configParameters>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <types xsi:type="a:Dictionary">
+                    <RootType xsi:type="a:Dictionary">
+                        <properties xsi:type="a:Dictionary?list">
+                            <item>
+<description xsi:nil="true" xsi:type="a:Null"/>
+<refresh xsi:type="xsd:string">ALWAYS</refresh>
+<placeholder xsi:nil="true" xsi:type="a:Null"/>
+<isImportCustomizable xsi:type="xsd:boolean">false</isImportCustomizable>
+<instructionText xsi:nil="true" xsi:type="a:Null"/>
+<isExpressionable xsi:type="xsd:boolean">false</isExpressionable>
+<label xsi:type="xsd:string">Provide a SharePoint subsite</label>
+<isRequired xsi:type="xsd:boolean">false</isRequired>
+<displayHint xsi:type="xsd:string">NORMAL</displayHint>
+<key xsi:type="xsd:string">subsiteCheckbox</key>
+<isHidden xsi:type="xsd:boolean">false</isHidden>
+<displayMode xsi:type="xsd:string">CHECKBOX</displayMode>
+<isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+<type xsi:type="xsd:string">BOOLEAN</type>
+                            </item>
+                            <item>
+<description xsi:nil="true" xsi:type="a:Null"/>
+<refresh xsi:type="xsd:string">NEVER</refresh>
+<placeholder xsi:type="xsd:string">Engineering</placeholder>
+<isImportCustomizable xsi:type="xsd:boolean">false</isImportCustomizable>
+<instructionText xsi:nil="true" xsi:type="a:Null"/>
+<isExpressionable xsi:type="xsd:boolean">true</isExpressionable>
+<label xsi:type="xsd:string">Subsite Name</label>
+<isRequired xsi:type="xsd:boolean">true</isRequired>
+<displayHint xsi:type="xsd:string">NORMAL</displayHint>
+<hasTransientChoices xsi:type="xsd:boolean">false</hasTransientChoices>
+<key xsi:type="xsd:string">subsite</key>
+<isHidden xsi:type="xsd:boolean">false</isHidden>
+<isMasked xsi:type="xsd:boolean">false</isMasked>
+<isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+<type xsi:type="xsd:string">STRING</type>
+                            </item>
+                            <item>
+<description xsi:type="xsd:string">The new folder will be created in this SharePoint directory</description>
+<refresh xsi:type="xsd:string">NEVER</refresh>
+<placeholder xsi:type="xsd:string">Shared Documents/MyFolder</placeholder>
+<isImportCustomizable xsi:type="xsd:boolean">false</isImportCustomizable>
+<instructionText xsi:nil="true" xsi:type="a:Null"/>
+<isExpressionable xsi:type="xsd:boolean">true</isExpressionable>
+<label xsi:type="xsd:string">Destination Folder Path</label>
+<isRequired xsi:type="xsd:boolean">true</isRequired>
+<displayHint xsi:type="xsd:string">NORMAL</displayHint>
+<hasTransientChoices xsi:type="xsd:boolean">false</hasTransientChoices>
+<key xsi:type="xsd:string">parentFolderUrl</key>
+<isHidden xsi:type="xsd:boolean">false</isHidden>
+<isMasked xsi:type="xsd:boolean">false</isMasked>
+<isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+<type xsi:type="xsd:string">STRING</type>
+                            </item>
+                            <item>
+<description xsi:nil="true" xsi:type="a:Null"/>
+<refresh xsi:type="xsd:string">NEVER</refresh>
+<placeholder xsi:type="xsd:string">Cases</placeholder>
+<isImportCustomizable xsi:type="xsd:boolean">false</isImportCustomizable>
+<instructionText xsi:nil="true" xsi:type="a:Null"/>
+<isExpressionable xsi:type="xsd:boolean">true</isExpressionable>
+<label xsi:type="xsd:string">Folder Name</label>
+<isRequired xsi:type="xsd:boolean">true</isRequired>
+<displayHint xsi:type="xsd:string">NORMAL</displayHint>
+<hasTransientChoices xsi:type="xsd:boolean">false</hasTransientChoices>
+<key xsi:type="xsd:string">folderName</key>
+<isHidden xsi:type="xsd:boolean">false</isHidden>
+<isMasked xsi:type="xsd:boolean">false</isMasked>
+<isReadOnly xsi:type="xsd:boolean">false</isReadOnly>
+<type xsi:type="xsd:string">STRING</type>
+                            </item>
+                        </properties>
+                        <name xsi:type="xsd:string">RootType</name>
+                    </RootType>
+                </types>
+                <state xsi:type="a:Dictionary">
+                    <a:entry key="#t" xsi:type="xsd:string">#/types/RootType</a:entry>
+                    <subsiteCheckbox xsi:type="xsd:boolean">true</subsiteCheckbox>
+                    <subsite xsi:type="xsd:string">Sites/RPA</subsite>
+                    <folderName xsi:type="xsd:string">123</folderName>
+                    <parentFolderUrl xsi:type="xsd:string">Shared Documents</parentFolderUrl>
+                </state>
+                <connectedSystemTemplateKey xsi:type="xsd:string"/>
+            </a:Dictionary>
+        </configParameters>
+        <isWrite>true</isWrite>
+        <integrationType>plugin.[SharePoint].[SharePoint].[CreateFolderIntegrationTemplate].WRITE</integrationType>
+        <connectedSystemUuid>_a-0000e94d-eca5-8000-9ba7-011c48011c48_16090</connectedSystemUuid>
+        <isConnectedSystemConnectionOptionSelected>true</isConnectedSystemConnectionOptionSelected>
+        <integrationOutputs>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <outputs xsi:type="a:IntegrationOutput?list"/>
+            </a:Dictionary>
+        </integrationOutputs>
+        <isRequestResponseLoggingEnabled>false</isRequestResponseLoggingEnabled>
+    </outboundIntegration>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e94d-eca5-8000-9ba7-011c48011c48_16127"/>
+    </history>
+</contentHaul>
